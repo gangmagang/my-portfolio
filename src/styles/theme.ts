@@ -50,9 +50,28 @@ export const theme = {
       glass: 0.9,
     },
   },
-} as const;
+};
 
+// 🔥 핵심: 여기서만 구조 타입 추출
 export type ThemeMode = keyof typeof theme;
-
-// 🔥 여기 핵심 수정
-export type AppTheme = typeof theme.light;
+export type AppTheme = {
+  color: {
+    bg: string;
+    text: string;
+    muted: string;
+    stroke: string;
+    cardBg: string;
+    border: string;
+  };
+  radius: {
+    card: string;
+    pill: string;
+  };
+  shadow: {
+    card: string;
+    hover: string;
+  };
+  opacity: {
+    glass: number;
+  };
+};
