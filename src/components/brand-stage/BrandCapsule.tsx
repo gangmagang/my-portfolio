@@ -20,33 +20,32 @@ export default function BrandCapsule() {
   const [index, setIndex] = useState(0);
   const [state, setState] = useState<"center" | "up" | "down">("center");
 
-  const Current = ITEMS[index];
-  const Next = ITEMS[(index + 1) % ITEMS.length];
-
   const handleClick = () => {
     if (state !== "center") return;
 
-    // 1️⃣ 현재 텍스트 위로 올라감
+    // 1️⃣ 현재 텍스트 위로 이동
     setState("up");
 
     setTimeout(() => {
-      // 2️⃣ 다음 텍스트를 아래에서 준비
+      // 2️⃣ 다음 텍스트로 교체 후 아래 위치에서 대기
       setIndex((prev) => (prev + 1) % ITEMS.length);
       setState("down");
 
       requestAnimationFrame(() => {
-        // 3️⃣ 아래에서 내려와 중앙 안착
+        // 3️⃣ 중앙으로 내려오며 안착
         setState("center");
       });
     }, 250);
   };
+
+  const Current = ITEMS[index];
 
   return (
     <CapsuleWrapper>
       <Capsule onClick={handleClick}>
         <Slot>
           <SlotItem $state={state}>
-            <Current />
+            <Current className="brand-svg" />
           </SlotItem>
         </Slot>
 
