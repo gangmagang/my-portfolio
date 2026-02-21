@@ -6,10 +6,11 @@ export const Section = styled.section`
   z-index: 10;
 
   min-height: 100vh;
-  background: ${({ theme }) => theme.color.bg};
 
-  padding-top: 160px;
-  padding-bottom: 120px;
+  padding: 160px 30px 120px;
+  ${mq.down("tablet")} {
+    padding: 160px 20px;
+  }
 `;
 
 export const Inner = styled.div`
@@ -27,7 +28,7 @@ export const Inner = styled.div`
 `;
 
 export const SubText = styled.div`
-  margin-bottom: 82px;
+  margin-bottom: 120px;
   line-height: 1.2;
 
   p:first-child {
@@ -39,7 +40,7 @@ export const SubText = styled.div`
       font-size: 18px;
     }
     ${mq.down("tablet")} {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 
@@ -51,7 +52,7 @@ export const SubText = styled.div`
       font-size: 26px;
     }
     ${mq.down("tablet")} {
-      font-size: 22px;
+      font-size: 20px;
     }
   }
 `;
@@ -65,14 +66,14 @@ export const HelloText = styled.h2`
   color: transparent;
   -webkit-text-stroke: 2px #c3c9f7;
 
-  margin-bottom: 92px;
+  margin-bottom: 115px;
 
   ${mq.down("laptop")} {
     font-size: 110px;
   }
 
   ${mq.down("tablet")} {
-    font-size: 90px;
+    font-size: 92px;
   }
 `;
 
@@ -87,6 +88,6 @@ export const MainTitle = styled.h1`
   }
 
   ${mq.down("tablet")} {
-    font-size: 42px;
+    font-size: 36px;
   }
 `;

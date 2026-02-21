@@ -24,6 +24,12 @@ export const theme = {
     opacity: {
       glass: 0.9,
     },
+    motion: {
+      fast: "0.2s",
+      normal: "0.3s",
+      easing: "cubic-bezier(0.4, 0, 0.2, 1)",
+      hoverScale: 0.97,
+    },
   },
 
   dark: {
@@ -49,6 +55,12 @@ export const theme = {
     opacity: {
       glass: 0.9,
     },
+    motion: {
+      fast: "0.2s",
+      normal: "0.3s",
+      easing: "cubic-bezier(0.4, 0, 0.2, 1)",
+      hoverScale: 0.97,
+    },
   },
 };
 
@@ -73,5 +85,11 @@ export type AppTheme = {
   };
   opacity: {
     glass: number;
+  };
+  motion: {
+    fast: string;
+    normal: string;
+    easing: string;
+    hoverScale: number;
   };
 };
