@@ -1,5 +1,4 @@
 import Providers from "./providers";
-import "../types/styled";
 
 export default function RootLayout({
   children,
