@@ -1,12 +1,14 @@
 "use client";
 
+import React from "react";
 import { ThemeProvider } from "styled-components";
+import { ThemeProviderBridge, useThemeMode } from "@/context/ThemeContext";
 import { theme } from "@/styles/theme";
 import GlobalStyle from "@/styles/globalStyle";
-import { ThemeProviderContext, useThemeMode } from "@/context/ThemeContext";
 
-function ThemeBridge({ children }: { children: React.ReactNode }) {
+function InnerProviders({ children }: { children: React.ReactNode }) {
   const { mode } = useThemeMode();
+
   return (
     <ThemeProvider theme={theme[mode]}>
       <GlobalStyle />
@@ -17,8 +19,8 @@ function ThemeBridge({ children }: { children: React.ReactNode }) {
 
 export default function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <ThemeProviderContext>
-      <ThemeBridge>{children}</ThemeBridge>
-    </ThemeProviderContext>
+    <ThemeProviderBridge>
+      <InnerProviders>{children}</InnerProviders>
+    </ThemeProviderBridge>
   );
 }
