@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
-    "@types/styled-components": "^5.1.36",
     "framer-motion": "^12.34.3",
     "next": "16.1.6",
     "react": "19.2.3",
