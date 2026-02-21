@@ -1,3 +1,5 @@
+// src/styles/theme.ts
+
 export const theme = {
   light: {
     color: {
@@ -51,4 +53,6 @@ export const theme = {
 } as const;
 
 export type ThemeMode = keyof typeof theme;
-export type AppTheme = (typeof theme)[ThemeMode];
+
+// 🔥 여기 핵심 수정
+export type AppTheme = typeof theme.light;
