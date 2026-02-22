@@ -42,6 +42,9 @@ export const SubText = styled.div`
     ${mq.down("tablet")} {
       font-size: 16px;
     }
+    ${mq.down("mobile")} {
+      font-size: 10px;
+    }
   }
 
   p:last-child {
@@ -53,6 +56,9 @@ export const SubText = styled.div`
     }
     ${mq.down("tablet")} {
       font-size: 20px;
+    }
+    ${mq.down("mobile")} {
+      font-size: 14px;
     }
   }
 `;
@@ -89,5 +95,8 @@ export const MainTitle = styled.h1`
 
   ${mq.down("tablet")} {
     font-size: 36px;
+  }
+  ${mq.down("mobile")} {
+    font-size: 22px;
   }
 `;

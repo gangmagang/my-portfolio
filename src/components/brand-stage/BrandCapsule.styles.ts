@@ -37,6 +37,7 @@ export const Capsule = styled.button`
   }
   ${mq.down("mobile")} {
     width: 80%;
+    height: 160px;
   }
 `;
 

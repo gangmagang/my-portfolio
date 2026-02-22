@@ -16,6 +16,9 @@ export const Title = styled.h3`
   ${mq.down("tablet")} {
     font-size: 32px;
   }
+  ${mq.down("mobile")} {
+    font-size: 26px;
+  }
 `;
 
 export const Meta = styled.p`
@@ -39,7 +42,7 @@ export const Desc = styled.p`
   font-weight: 400;
 
   ${mq.down("laptop")} {
-    font-size: 20px;
+    font-size: 18px;
   }
   ${mq.down("tablet")} {
     font-size: 16px;
@@ -51,4 +54,7 @@ export const Tools = styled.p`
   font-size: 12px;
   font-weight: 200;
   color: ${({ theme }) => theme.color.muted};
+  ${mq.down("laptop")} {
+    font-size: 10px;
+  }
 `;

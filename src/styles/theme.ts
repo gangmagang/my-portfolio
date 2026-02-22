@@ -1,4 +1,5 @@
 // src/styles/theme.ts
+import { mq } from "./breakpoints";
 
 export const theme = {
   light: {
@@ -12,7 +13,7 @@ export const theme = {
     },
 
     radius: {
-      card: "60px",
+      card: "clamp(28px, 1vw, 48px)",
       pill: "999px",
     },
 

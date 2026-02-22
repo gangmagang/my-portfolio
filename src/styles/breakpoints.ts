@@ -2,7 +2,7 @@ export const bp = {
   desktop: 1440,
   laptop: 1200,
   tablet: 860,
-  mobile: 480,
+  mobile: 520,
 } as const;
 
 export const mq = {
