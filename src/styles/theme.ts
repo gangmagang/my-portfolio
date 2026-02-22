@@ -13,7 +13,7 @@ export const theme = {
     },
 
     radius: {
-      card: "clamp(28px, 1.5vw, 48px)",
+      card: "clamp(28px, 2vw, 48px)",
       pill: "999px",
     },
 
