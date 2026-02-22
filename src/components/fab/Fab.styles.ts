@@ -22,6 +22,8 @@ export const FabWrap = styled.div`
 
   ${mq.down("mobile")} {
     gap: 12px;
+    right: 16px;
+    bottom: 22px;
   }
 `;
 

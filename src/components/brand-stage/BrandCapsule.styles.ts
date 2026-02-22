@@ -37,7 +37,7 @@ export const Capsule = styled.button`
   }
   ${mq.down("mobile")} {
     width: 80%;
-    height: 160px;
+    height: 148px;
   }
 `;
 
@@ -86,6 +86,9 @@ export const SlotItem = styled.div<{ $state: "center" | "up" | "down" }>`
     }
     ${mq.down("tablet")} {
       height: 82px;
+    }
+    ${mq.down("mobile")} {
+      height: 60px;
     }
   }
 `;

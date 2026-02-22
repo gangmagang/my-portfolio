@@ -23,6 +23,10 @@ export const Nav = styled.nav`
     bottom: 40px;
     transform: none;
   }
+  ${mq.down("mobile")} {
+    bottom: 22px;
+    left: 16px;
+  }
 `;
 
 /* NAV BODY */
