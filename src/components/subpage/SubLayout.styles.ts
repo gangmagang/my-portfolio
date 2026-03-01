@@ -3,24 +3,18 @@
 import styled from "styled-components";
 import { mq } from "@/styles/breakpoints";
 
-export const Page = styled.main`
-  width: 100%;
-  min-height: 100vh;
-  background: ${({ theme }) => theme.color.bg};
-`;
-
 export const Inner = styled.div`
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 
-  padding: 180px 80px 120px;
+  padding: 0 60px;
 
   ${mq.down("tablet")} {
-    padding: 140px 40px 100px;
+    padding: 0 40px;
   }
 
   ${mq.down("mobile")} {
-    padding: 120px 24px 80px;
+    padding: 0 20px;
   }
 `;
 
