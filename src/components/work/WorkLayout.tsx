@@ -1,5 +1,8 @@
 "use client";
 
+import Link from "next/link";
+import styled from "styled-components";
+
 import {
   Grid,
   Left,
@@ -19,21 +22,38 @@ export default function WorkLayout() {
     <Grid>
       <Left>
         <Half>
-          <MysticCard />
+          <CardLink href="/projects/mystic">
+            <MysticCard />
+          </CardLink>
         </Half>
+
         <Half>
-          <LapizCard />
+          <CardLink href="/projects/lapiz">
+            <LapizCard />
+          </CardLink>
         </Half>
       </Left>
 
       <Right>
         <ResearchWrap>
-          <ResearchCard />
+          <CardLink href="/projects/research">
+            <ResearchCard />
+          </CardLink>
         </ResearchWrap>
+
         <SampleWrap>
-          <SampleCard />
+          <CardLink href="/projects/archive">
+            <SampleCard />
+          </CardLink>
         </SampleWrap>
       </Right>
     </Grid>
   );
 }
+
+/* 🔥 Link wrapper */
+const CardLink = styled(Link)`
+  display: block;
+  text-decoration: none;
+  color: inherit;
+`;

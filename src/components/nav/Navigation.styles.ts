@@ -63,6 +63,7 @@ export const NavItem = styled.button`
   background: none;
   border: none;
   padding: 0;
+  text-decoration: none;
 
   font-size: 26px;
   font-weight: 400;

@@ -1,13 +1,19 @@
 "use client";
 
+import Link from "next/link";
 import { useRef, useState } from "react";
 import { Nav, NavInner, NavItem, Indicator } from "./Navigation.styles";
 
-const ITEMS = ["MYSTIC", "LAPIZ", "RESEARCH", "ARCHIVE"];
+const ITEMS = [
+  { label: "MYSTIC", href: "/projects/mystic" },
+  { label: "LAPIZ", href: "/projects/lapiz" },
+  { label: "RESEARCH", href: "/projects/research" },
+  { label: "SAMPLE", href: "/projects/archive" },
+];
 
 export default function Navigation() {
   const navRef = useRef<HTMLDivElement>(null);
-  const itemRefs = useRef<(HTMLButtonElement | null)[]>([]);
+  const itemRefs = useRef<(HTMLAnchorElement | null)[]>([]);
 
   const [indicator, setIndicator] = useState({
     left: 0,
@@ -17,9 +23,9 @@ export default function Navigation() {
 
   const getIndicatorWidth = () => {
     const w = window.innerWidth;
-    if (w <= 560) return 72; // mobile
-    if (w <= 860) return 92; // tablet
-    return 112; // default
+    if (w <= 560) return 72;
+    if (w <= 860) return 92;
+    return 112;
   };
 
   const moveIndicator = (index: number) => {
@@ -47,15 +53,17 @@ export default function Navigation() {
   return (
     <Nav>
       <NavInner ref={navRef} onMouseLeave={resetIndicator}>
-        {ITEMS.map((label, i) => (
+        {ITEMS.map((item, i) => (
           <NavItem
-            key={label}
-            ref={(el) => {
+            as={Link}
+            href={item.href}
+            key={item.label}
+            ref={(el: HTMLAnchorElement | null) => {
               itemRefs.current[i] = el;
             }}
             onMouseEnter={() => moveIndicator(i)}
           >
-            {label}
+            {item.label}
           </NavItem>
         ))}
 
