@@ -9,48 +9,52 @@ export default function MysticPage() {
   return (
     <SubLayout>
       <SubHero
-        title="MYSTIC BLOOD"
-        subtitle="Brand Application | Visual Direction"
-        description="Mystic Blood는 고가 세차용품 브랜드의 정체성을 보다 명확히 드러내기 위해 진행한 리브랜딩 프로젝트입니다.
-기존 브랜드 톤을 해치지 않는 선에서 톤앤매너를 재정리하고, 표현의 밀도를 조정해 절제된 프리미엄 무드를 구축했습니다.
-제품 썸네일부터 상세페이지, 카탈로그, 브랜드몰까지 다양한 컨텐츠에 동일한 톤앤매너가 유지되도록 확장했습니다."
+        title="Research Factory"
+        subtitle="UI Structure | Front-end Implementation"
+        description="Research Factoty는 기존에 작업하던 프레임워크를 기반으로 UI를 구체화하고,
+정보 구조와 화면 흐름을 정리해 실제 서비스 화면으로 구현했습니다.
+디자인과 퍼블리싱을 함께 고려하며 구조를 다듬는 데 집중했습니다."
       />
       <MetaSection>
         <SubMetaCard
           title="ROLE"
           items={[
-            "브랜드 톤앤매너 정리",
-            "브랜드 비주얼 디자인",
-            "상세페이지 및 카탈로그 디자인",
-            "쿠팡 브랜드몰 디자인",
-            "라벨 캐릭터 리디자인 등",
+            "UI 구조 구체화",
+            "HTML · CSS 퍼블리싱",
+            "React / Next.js 기반 구현",
+            "간단한 JS 인터랙션 적용",
           ]}
-          footer="촬영 제외 디자인 작업 전반"
+          footer="프레임 워크는 기존에 제작돼있었음"
         />
 
         <SubMetaCard
           title="DELIVERABLES"
           items={[
-            "브랜드 카탈로그",
-            "상세페이지 및 제품 썸네일",
-            "브랜드몰 비주얼",
-            "SNS 포스터",
-            "일부 제품 시연 영상",
+            "웹사이트 UI 디자인",
+            "페이지 레이아웃 시스템",
+            "React 기반 화면 구현",
+            "HTML, CSS 작성",
+            "카드뉴스 콘텐츠",
           ]}
-          footer="이외 촬영물 기획, 콘텐츠 전략"
+          footer="이외 PPT 제작, 유튜브 간단 편집 등"
         />
       </MetaSection>
       <SubHighlightSection
-        smallTitle="과시가 아닌"
-        bigTitle="밀도와 깊이로"
-        topDescription="어두운 배경 위에 은은한 광원을 더해 공간감을 만들었습니다. 표현의 질감은 뉴모피즘과 그라디언트로 표현해 깊이감과 톤을 살리고 자연스러운 컬러 포인트만 남겨 브랜드의 톤을 유지했습니다."
-        bottomDescription="상세페이지, 카탈로그, 브랜드몰까지 동일한 비주얼 기준을 유지하기 위해 타이포스타일과 컬러 밀도를 통일해 매체가 달라도 브랜드 톤이 흔들리지 않도록 신경썼습니다."
+        smallTitle="화면의 흐름을"
+        bigTitle="재정리"
+        topDescription="기존 구조를 분석한 뒤, 정보 위계를 재배치했습니다.
+사용자 흐름에 맞게 섹션을 정리하고, UI 밀도를 조정했습니다.
+불필요한 시각 요소는 제거하고 기능 중심으로 재구성했습니다."
+        bottomDescription="React와 Next.js 환경에서 styled-components 기반으로 화면을 구현했습니다.
+컴포넌트 단위로 분리해 유지보수가 편리하도록 신경썼으며
+간단한 JavaScript 인터랙션으로 사용성을 보완했습니다."
         image="/Photo_main.png"
       />
       <SubGallerySection
         images={["/Photo_main.png", "/Photo_main.png"]}
-        title="밀도와 깊이를 통해 브랜드의 중심을 재정비했습니다."
-        description="깊이감과 질감 표현이 과시 분위기를 해치지 않도록 최대한 자연스럽고 은은하게 사용해 브랜드가 가진 강한 인상이 자연스럽게 유지되도록 균형을 맞췄습니다."
+        title="디자인을 구현까지 연결하는 방식을 택했습니다."
+        description="디자인 단계에서 설정한 간격과 위계가 실제 코드에서도 유지되도록 신경 썼으며
+시각과 구조가 분리되지 않도록 구현 과정에서 반복적으로 조정했습니다."
         links={[]}
       />
     </SubLayout>
