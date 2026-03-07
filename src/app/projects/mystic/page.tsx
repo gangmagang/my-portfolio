@@ -11,9 +11,13 @@ export default function MysticPage() {
       <SubHero
         title="MYSTIC BLOOD"
         subtitle="Brand Application | Visual Direction"
-        description="Mystic Blood는 고가 세차용품 브랜드의 정체성을 보다 명확히 드러내기 위해 진행한 리브랜딩 프로젝트입니다.
+        image="/Mystic_logo.png"
+        projectLabel="Brand Application Project"
+        heroSubTop="Premium Car Care"
+        heroSubBottom="Brand Identity"
+        description={`Mystic Blood는 고가 세차용품 브랜드의 정체성을 보다 명확히 드러내기 위해 진행한 리브랜딩 프로젝트입니다.
 기존 브랜드 톤을 해치지 않는 선에서 톤앤매너를 재정리하고, 표현의 밀도를 조정해 절제된 프리미엄 무드를 구축했습니다.
-제품 썸네일부터 상세페이지, 카탈로그, 브랜드몰까지 다양한 컨텐츠에 동일한 톤앤매너가 유지되도록 확장했습니다."
+제품 썸네일부터 상세페이지, 카탈로그, 브랜드몰까지 다양한 컨텐츠에 동일한 톤앤매너가 유지되도록 확장했습니다.`}
       />
       <MetaSection>
         <SubMetaCard
@@ -45,10 +49,10 @@ export default function MysticPage() {
         bigTitle="밀도와 깊이로"
         topDescription="어두운 배경 위에 은은한 광원을 더해 공간감을 만들었습니다. 표현의 질감은 뉴모피즘과 그라디언트로 표현해 깊이감과 톤을 살리고 자연스러운 컬러 포인트만 남겨 브랜드의 톤을 유지했습니다."
         bottomDescription="상세페이지, 카탈로그, 브랜드몰까지 동일한 비주얼 기준을 유지하기 위해 타이포스타일과 컬러 밀도를 통일해 매체가 달라도 브랜드 톤이 흔들리지 않도록 신경썼습니다."
-        image="/Photo_main.png"
+        image="/Mystic-sub_0.png"
       />
       <SubGallerySection
-        images={["/Photo_main.png", "/Photo_main.png"]}
+        images={["/Mystic-sub_1.png", "/Mystic-sub_2.png"]}
         title="밀도와 깊이를 통해 브랜드의 중심을 재정비했습니다."
         description="깊이감과 질감 표현이 과시 분위기를 해치지 않도록 최대한 자연스럽고 은은하게 사용해 브랜드가 가진 강한 인상이 자연스럽게 유지되도록 균형을 맞췄습니다."
         links={[

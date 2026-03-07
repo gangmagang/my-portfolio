@@ -11,9 +11,13 @@ export default function MysticPage() {
       <SubHero
         title="Research Factory"
         subtitle="UI Structure | Front-end Implementation"
-        description="Research Factoty는 기존에 작업하던 프레임워크를 기반으로 UI를 구체화하고,
+        image="/RFactory.png"
+        projectLabel="Brand Application Project"
+        heroSubTop="Premium Car Care"
+        heroSubBottom="Brand Identity"
+        description={`Research Factoty는 기존에 작업하던 프레임워크를 기반으로 UI를 구체화하고,
 정보 구조와 화면 흐름을 정리해 실제 서비스 화면으로 구현했습니다.
-디자인과 퍼블리싱을 함께 고려하며 구조를 다듬는 데 집중했습니다."
+디자인과 퍼블리싱을 함께 고려하며 구조를 다듬는 데 집중했습니다.`}
       />
       <MetaSection>
         <SubMetaCard
@@ -40,22 +44,35 @@ export default function MysticPage() {
         />
       </MetaSection>
       <SubHighlightSection
-        smallTitle="화면의 흐름을"
-        bigTitle="재정리"
+        smallTitle="디자인과 구현을"
+        bigTitle="함께 설계"
         topDescription="기존 구조를 분석한 뒤, 정보 위계를 재배치했습니다.
 사용자 흐름에 맞게 섹션을 정리하고, UI 밀도를 조정했습니다.
 불필요한 시각 요소는 제거하고 기능 중심으로 재구성했습니다."
         bottomDescription="React와 Next.js 환경에서 styled-components 기반으로 화면을 구현했습니다.
 컴포넌트 단위로 분리해 유지보수가 편리하도록 신경썼으며
 간단한 JavaScript 인터랙션으로 사용성을 보완했습니다."
-        image="/Photo_main.png"
+        image="/RF_01.png"
       />
       <SubGallerySection
-        images={["/Photo_main.png", "/Photo_main.png"]}
+        images={["/RF_02.png", "/RF_03.png"]}
         title="디자인을 구현까지 연결하는 방식을 택했습니다."
         description="디자인 단계에서 설정한 간격과 위계가 실제 코드에서도 유지되도록 신경 썼으며
 시각과 구조가 분리되지 않도록 구현 과정에서 반복적으로 조정했습니다."
-        links={[]}
+        links={[
+          {
+            label: "",
+            href: "",
+          },
+          {
+            label: "",
+            href: "",
+          },
+          {
+            label: "",
+            href: "",
+          },
+        ]}
       />
     </SubLayout>
   );

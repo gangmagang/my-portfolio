@@ -42,7 +42,7 @@ export default function SubHighlightSection({
           src={image}
           alt="highlight visual"
           fill
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "contain" }}
         />
       </ImageCard>
 

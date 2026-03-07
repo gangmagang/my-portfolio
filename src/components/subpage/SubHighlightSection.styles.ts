@@ -8,7 +8,7 @@ export const Section = styled.section`
   text-align: center;
 
   ${mq.down("tablet")} {
-    margin-top: 220px;
+    margin-top: 120px;
   }
 `;
 
@@ -75,8 +75,8 @@ export const ImageCard = styled.div`
 
   ${mq.down("tablet")} {
     width: 100%;
-    margin: 160px auto 140px;
-    aspect-ratio: 4 / 3; /* 모바일에서 조금 더 길게 */
+    margin: 80px auto 140px;
+    aspect-ratio: 16 / 9; /* 모바일에서 조금 더 길게 */
   }
 `;
 
