@@ -2,6 +2,10 @@ import Providers from "./providers";
 import Navigation from "@/components/nav/Navigation";
 import Fab from "@/components/fab/Fab";
 
+export const metadata = {
+  title: "Yoo SungHyun",
+  description: "Yoo SungHyun's Portfolio",
+};
 export default function RootLayout({
   children,
 }: {
