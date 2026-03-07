@@ -13,10 +13,10 @@ export default function MysticPage() {
         subtitle="Content Design | Visual System"
         image="/lapiz.png"
         darkImage="/lapiz_wh.png"
-        projectLabel="Brand Application Project"
-        heroSubTop="Premium Car Care"
-        heroSubBottom="Brand Identity"
-        description={`가볍고 직선적인 Lapiz Sensible의 브랜드 톤은 최대한 유지하며
+        projectLabel="Fashion Brand Project"
+        heroSubTop="Eyewear Brand Identity"
+        heroSubBottom="Visual Design"
+        description={`감각적인 연필, Lapiz Sensible의 브랜드 톤은 최대한 유지하며
 다양한 인플루언서들의 이미지를 자연스럽게 융화시키는 데 집중했습니다.
 컬러는 인플루언서를 따르되, 스타일은 유지하는 방향으로 설계했습니다.`}
       />

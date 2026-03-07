@@ -12,12 +12,11 @@ export default function MysticPage() {
         title="Research Factory"
         subtitle="UI Structure | Front-end Implementation"
         image="/RFactory.png"
-        projectLabel="Brand Application Project"
-        heroSubTop="Premium Car Care"
+        projectLabel="Web Platform Project"
+        heroSubTop="UX/UI Design"
         heroSubBottom="Brand Identity"
-        description={`Research Factoty는 기존에 작업하던 프레임워크를 기반으로 UI를 구체화하고,
-정보 구조와 화면 흐름을 정리해 실제 서비스 화면으로 구현했습니다.
-디자인과 퍼블리싱을 함께 고려하며 구조를 다듬는 데 집중했습니다.`}
+        description={`의료 종사자를 위한 논문 정리, 일러스트레이터 연결 플랫폼으로, 연구 자료를 효율적으로 탐색하고 이해할 수 있도록 설계된 웹 서비스입니다.
+기존 와이어프레임 구조를 기반으로 UI를 정리, 디자인하고 React와 TypeScript, styled-components를 활용해 프론트엔드 퍼블리싱을 진행했습니다.`}
       />
       <MetaSection>
         <SubMetaCard
@@ -28,7 +27,7 @@ export default function MysticPage() {
             "React / Next.js 기반 구현",
             "간단한 JS 인터랙션 적용",
           ]}
-          footer="프레임 워크는 기존에 제작돼있었음"
+          footer="와이어프레임은 기존에 제작돼있었음"
         />
 
         <SubMetaCard
